@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alm77066-eng.github.io/-/sitemap.xml
