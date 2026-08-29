@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" type="image/svg+xml" href="assets/newtube-mark.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { theme: { extend: { colors: { primary: '#ff1838', primaryHover: '#e40022' } } } };
+    </script>
     <meta name="description" content="تحميل نيو تيوب NewTube للأندرويد مجانًا، والتعرف على مميزات التطبيق وطريقة استخدامه كخيار لتحميل الفيديوهات وبديل مستقل لسناب تيوب.">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
@@ -18,23 +28,6 @@
     <meta name="twitter:title" content="تحميل نيو تيوب NewTube للأندرويد | أفضل بديل لسناب تيوب">
     <meta name="twitter:description" content="تحميل نيو تيوب NewTube للأندرويد مجانًا، والتعرف على مميزات التطبيق وطريقة استخدامه كخيار لتحميل الفيديوهات وبديل مستقل لسناب تيوب.">
     <title>تحميل نيو تيوب NewTube للأندرويد | أفضل بديل لسناب تيوب</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#ff0000',
-                        primaryHover: '#cc0000'
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
-        body { font-family: 'Cairo', sans-serif; }
-    </style>
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,55 +58,59 @@
 }
     </script>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body>
 
-<header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap gap-4 justify-between items-center">
-        <a href="https://alm77066-eng.github.io/-/" class="text-2xl font-extrabold text-primary">نيو تيوب <span class="text-gray-600 text-sm">NewTube</span></a>
-        <nav class="flex flex-wrap gap-3 text-sm font-bold">
-            <a href="https://alm77066-eng.github.io/-/" class="hover:text-primary">الرئيسية</a>
-            <a href="https://alm77066-eng.github.io/-/download-newtube.html" class="hover:text-primary">تحميل التطبيق</a>
-            <a href="https://alm77066-eng.github.io/-/features.html" class="hover:text-primary">المميزات</a>
-            <a href="https://alm77066-eng.github.io/-/snaptube-alternative.html" class="hover:text-primary">بديل سناب تيوب</a>
-            <a href="https://alm77066-eng.github.io/-/how-to-download.html" class="hover:text-primary">دليل التحميل</a>
-            <a href="https://alm77066-eng.github.io/-/faq.html" class="hover:text-primary">الأسئلة الشائعة</a>
-            <a href="https://alm77066-eng.github.io/-/about.html" class="hover:text-primary">عن نيو تيوب</a>
-        </nav>
-    </div>
+<header class="nt-header">
+  <div class="nt-shell nt-navwrap">
+    <a class="nt-brand" href="https://alm77066-eng.github.io/-/" aria-label="الصفحة الرئيسية لنيو تيوب">
+      <img src="assets/newtube-mark.svg" width="38" height="38" alt="شعار NewTube">
+      <span>نيو تيوب <small>NewTube</small></span>
+    </a>
+    <nav class="nt-nav" aria-label="التنقل الرئيسي">
+      <a href="https://alm77066-eng.github.io/-/">الرئيسية</a>
+      <a href="https://alm77066-eng.github.io/-/download-newtube.html">تحميل التطبيق</a>
+      <a href="https://alm77066-eng.github.io/-/features.html">المميزات</a>
+      <a href="https://alm77066-eng.github.io/-/snaptube-alternative.html">بديل سناب تيوب</a>
+      <a href="https://alm77066-eng.github.io/-/how-to-download.html">دليل التحميل</a>
+      <a href="https://alm77066-eng.github.io/-/faq.html">الأسئلة الشائعة</a>
+      <a href="https://alm77066-eng.github.io/-/about.html">عن نيو تيوب</a>
+      <a class="nt-cta" href="https://github.com/alm77066-eng/app-updates/releases/download/2.1.22/app-release.apk">تحميل APK</a>
+    </nav>
+  </div>
 </header>
 
 <main>
-<section class="py-20 px-4 text-center bg-gradient-to-b from-gray-100 to-white">
-  <div class="max-w-4xl mx-auto">
-    <span class="inline-block mb-4 px-4 py-2 rounded-full bg-red-50 text-primary font-bold">NewTube للأندرويد</span>
-    <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+<section class="nt-hero">
+  <div class="nt-hero-inner">
+    <span class="nt-kicker">NewTube للأندرويد</span>
+    <h1 >
       تحميل نيو تيوب NewTube للأندرويد
-      <span class="block text-primary mt-2">برنامج لتحميل الفيديوهات بسهولة</span>
+      <span class="accent">برنامج لتحميل الفيديوهات بسهولة</span>
     </h1>
-    <p class="text-lg md:text-xl text-gray-600 mb-10 leading-relaxed">
+    <p >
       تعرّف على نيو تيوب، مميزاته وطريقة استخدامه، والوصول إلى أحدث رابط تحميل APK.
       التطبيق يستهدف تحميل الفيديوهات من يوتيوب وفيسبوك وإنستجرام وتيك توك وفقًا لما يدعمه الإصدار الحالي.
     </p>
-    <a href="https://github.com/alm77066-eng/app-updates/releases/download/2.1.22/app-release.apk" class="inline-flex items-center justify-center bg-primary hover:bg-primaryHover text-white font-bold py-4 px-10 rounded-full shadow-lg transition text-xl">
+    <a href="https://github.com/alm77066-eng/app-updates/releases/download/2.1.22/app-release.apk" class="nt-btn nt-btn-primary">
       تحميل نيو تيوب الآن 📥
     </a>
-    <p class="mt-4 text-sm text-gray-500 font-semibold">ملف APK للأندرويد — الإصدار الحالي 2.1.22</p>
+    <p class="nt-meta">ملف APK للأندرويد — الإصدار الحالي 2.1.22</p>
   </div>
 </section>
 
-<section class="py-16 px-4 bg-white">
-  <div class="max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12">لماذا يبحث المستخدمون عن نيو تيوب؟</h2>
-    <div class="grid md:grid-cols-3 gap-7">
-      <a href="https://alm77066-eng.github.io/-/download-newtube.html" class="p-7 rounded-2xl border bg-gray-50 hover:shadow-md">
+<section class="nt-section white">
+  <div class="nt-shell">
+    <h2 class="text-center">لماذا يبحث المستخدمون عن نيو تيوب؟</h2>
+    <div class="nt-grid">
+      <a href="https://alm77066-eng.github.io/-/download-newtube.html" class="nt-card">
         <h3 class="text-xl font-bold mb-3">تحميل نيو تيوب APK</h3>
         <p class="text-gray-600">صفحة مخصصة لرابط التحميل الحالي ومعلومات الإصدار وطريقة التثبيت على أندرويد.</p>
       </a>
-      <a href="https://alm77066-eng.github.io/-/snaptube-alternative.html" class="p-7 rounded-2xl border bg-gray-50 hover:shadow-md">
+      <a href="https://alm77066-eng.github.io/-/snaptube-alternative.html" class="nt-card">
         <h3 class="text-xl font-bold mb-3">بديل سناب تيوب</h3>
         <p class="text-gray-600">تعرّف على نيو تيوب كخيار آخر لمن يبحث عن تطبيق لتحميل الفيديوهات على أندرويد.</p>
       </a>
-      <a href="https://alm77066-eng.github.io/-/how-to-download.html" class="p-7 rounded-2xl border bg-gray-50 hover:shadow-md">
+      <a href="https://alm77066-eng.github.io/-/how-to-download.html" class="nt-card">
         <h3 class="text-xl font-bold mb-3">طريقة التحميل</h3>
         <p class="text-gray-600">شرح مبسط للتعامل مع التطبيق والتحميل من المنصات التي يدعمها الإصدار الحالي.</p>
       </a>
@@ -121,14 +118,14 @@
   </div>
 </section>
 
-<section class="py-16 px-4 bg-gray-50">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6">نيو تيوب وعمليات البحث عن تحميل الفيديو</h2>
-    <p class="text-gray-700 leading-8 mb-5">
+<section class="nt-section soft">
+  <div class="nt-content">
+    <h2 >نيو تيوب وعمليات البحث عن تحميل الفيديو</h2>
+    <p >
       إذا كنت تبحث عن برنامج تحميل فيديوهات للأندرويد، فمن المهم أن تعرف ما الذي يدعمه التطبيق قبل التثبيت.
       نيو تيوب يركز على تجربة بسيطة، مع خيارات للجودة وفقًا للفيديو والمنصة والإصدار.
     </p>
-    <p class="text-gray-700 leading-8">
+    <p >
       تستطيع من خلال صفحات الموقع معرفة المميزات، خطوات التثبيت، الأسئلة الشائعة، ومقارنة نيو تيوب مع فكرة
       استخدام بديل لسناب تيوب، ثم الوصول إلى رابط التحميل المباشر للإصدار الحالي.
     </p>
@@ -136,19 +133,21 @@
 </section>
 </main>
 
-<footer class="bg-gray-900 text-gray-400 py-10 mt-16">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-        <p class="font-bold text-gray-200 mb-3">نيو تيوب NewTube</p>
-        <p class="mb-3">تطبيق أندرويد لتحميل الفيديوهات بسهولة من المنصات التي يدعمها التطبيق.</p>
-        <div class="flex flex-wrap justify-center gap-4 text-sm mb-4">
-            <a href="https://alm77066-eng.github.io/-/download-newtube.html" class="hover:text-white">تحميل التطبيق</a>
-            <a href="https://alm77066-eng.github.io/-/features.html" class="hover:text-white">المميزات</a>
-            <a href="https://alm77066-eng.github.io/-/snaptube-alternative.html" class="hover:text-white">بديل سناب تيوب</a>
-            <a href="https://alm77066-eng.github.io/-/how-to-download.html" class="hover:text-white">دليل الاستخدام</a>
-            <a href="https://alm77066-eng.github.io/-/faq.html" class="hover:text-white">الأسئلة الشائعة</a>
-        </div>
-        <p>&copy; 2026 نيو تيوب NewTube. جميع الحقوق محفوظة.</p>
+<footer class="nt-footer">
+  <div class="nt-shell">
+    <a class="nt-brand" href="https://alm77066-eng.github.io/-/">
+      <img src="assets/newtube-mark.svg" width="38" height="38" alt="شعار NewTube">
+      <span>نيو تيوب <small>NewTube</small></span>
+    </a>
+    <div class="nt-footer-links">
+      <a href="https://alm77066-eng.github.io/-/download-newtube.html">تحميل التطبيق</a>
+      <a href="https://alm77066-eng.github.io/-/features.html">المميزات</a>
+      <a href="https://alm77066-eng.github.io/-/snaptube-alternative.html">بديل سناب تيوب</a>
+      <a href="https://alm77066-eng.github.io/-/how-to-download.html">دليل الاستخدام</a>
+      <a href="https://alm77066-eng.github.io/-/faq.html">الأسئلة الشائعة</a>
     </div>
+    <div class="nt-footer-copy">© 2026 نيو تيوب NewTube. جميع الحقوق محفوظة.</div>
+  </div>
 </footer>
 </body>
 </html>
