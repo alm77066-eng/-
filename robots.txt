@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
+Disallow: /google3ef0f91ef14d78b6.html
 Sitemap: https://alm77066-eng.github.io/-/sitemap.xml
